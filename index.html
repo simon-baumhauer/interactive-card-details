@@ -36,12 +36,14 @@
       <img src="images\bg-main-desktop.png" class="background-img" alt="" />
       <span class="card-front-wrap">
         <img src="images\card-logo.svg" class="card-logo" />
-        <span class="card-number">000 000 000 000</span>
-        <span class="card-name">Jane Appleseed</span>
-        <span class="card-expiry-date">00/00</span>
+        <span class="card-number" id="card-number">000 000 000 000</span>
+        <span class="card-name" id="card-name">Jane Appleseed</span>
+        <span class="card-expiry-date"
+          ><span id="month">00</span>/<span id="yearOutput">00</span>
+        </span>
         <img src="images\bg-card-front.png" alt="" class="card-front" />
       </span>
-      <span>
+      <span style="position: relative">
         <span class="cvc">000</span>
         <img src="images\bg-card-back.png" alt="" class="card-back" />
       </span>
@@ -80,15 +82,23 @@
               <option name="12" value="12">12</option>
             </select>
           </div>
-          <input
-            id="year"
-            type="number"
-            min="22"
-            max="30"
-            value="22"
-            input
-            placeholder="YY"
-          />
+          <div id="head2">
+            <select placeholder="YY" id="year">
+              <option name="" value="" style="display: none">YY</option>
+              <option name="01" value="01">01</option>
+              <option name="02" value="02">02</option>
+              <option name="03" value="03">03</option>
+              <option name="04" value="04">04</option>
+              <option name="05" value="05">05</option>
+              <option name="06" value="06">06</option>
+              <option name="07" value="07">07</option>
+              <option name="08" value="08">08</option>
+              <option name="09" value="09">09</option>
+              <option name="10" value="10">10</option>
+              <option name="11" value="11">11</option>
+              <option name="12" value="12">12</option>
+            </select>
+          </div>
           <input type="number" placeholder="123" id="cvc" />
         </div>
         <button>Confirm</button>

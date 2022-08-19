@@ -8,17 +8,16 @@ let cardCvc = document.getElementById("cvc");
 // submit event
 
 document.querySelector("button").addEventListener("click", function (e) {
-  console.log(
-    "Name:",
-    cardholderName.value,
-    "Number:",
-    cardholderNumber.value,
-    "Month:",
-    cardMonth.value,
-    "Year:",
-    cardYear.value,
-    "CVC:",
-    cardCvc.value
-  );
+  carnumberOutput = document.getElementById("card-number");
+  carnameOutput = document.getElementById("card-name");
+  cardMonthOutput = document.getElementById("month");
+  cardYearOutput = document.getElementById("yearOutput");
+  cardCvcOutput = document.querySelector(".cvc");
+
+  carnameOutput.innerText = cardholderName.value;
+  carnumberOutput.innerText = cardholderNumber.value;
+  cardMonthOutput.innerText = cardMonth.value;
+  cardYearOutput.innerText = cardYear.value;
+  cardCvcOutput.innerText = cardCvc.value;
   e.preventDefault();
 });
