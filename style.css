@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 100px;
+}
+
+body > div {
+  width: 100%;
+}
+
+.background-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+}
+
+/* card-front */
+
+.card-front-wrap {
+  margin-top: 100px;
+  margin-left: 140px;
+  position: relative;
+}
+
+.card-front-wrap > .card-logo {
+  position: absolute;
+  z-index: 4;
+  padding: 10px 0px 0px 10px;
+}
+
+.card-number {
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 4;
+  margin: 150px 0px 0px 100px;
+}
+
+.card-name {
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 4;
+  bottom: 20px;
+  margin-left: 30px;
+}
+
+.card-expiry-date {
+  color: white;
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 4;
+  bottom: 20px;
+  margin-left: 350px;
+}
+
+/* card-back */
+
+.card-back {
+  margin-top: 40px;
+  margin-left: 250px;
+  position: relative;
+}
+
+.card-back > {
+  margin-top: 40px;
+  margin-left: 250px;
+}
+
+.cvc {
+  color: white;
+  position: absolute;
+  bottom: 113px;
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 4;
+}
+
+/* form-stye */
+
+.forms-container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding-left: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin-bottom: 10px;
+}
+
+form > #cardholder-name,
+.number {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 25px;
+}

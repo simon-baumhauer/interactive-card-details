@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images\bg-main-desktop.png" class="background-img" alt="" />
+      <span class="card-front-wrap">
+        <img src="images\card-logo.svg" class="card-logo" />
+        <span class="card-number">000 000 000 000</span>
+        <span class="card-name">Jane Appleseed</span>
+        <span class="card-expiry-date">00/00</span>
+        <img src="images\bg-card-front.png" alt="" class="card-front" />
+      </span>
+      <span>
+        <span class="cvc">000</span>
+        <img src="images\bg-card-back.png" alt="" class="card-back" />
+      </span>
+    </div>
+    <div class="forms-container">
+      <form action="">
+        <label for="cardholder-name">CARDHOLDER NAME</label>
+        <input type="text" id="cardholder-name" />
+        <label for="cardholder-name">CARD NUMBER</label>
+        <input type="text" class="number" />
+        <label for="date"> Exp. Date (MM/YY)</label>
+        <div style="display: flex">
+          <div id="head2">
+            <select id="gMonth2" onchange="show_month()">
+              <option value="">--Select Month--</option>
+              <option selected value="1">January</option>
+              <option value="2">February</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">August</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+          </div>
+          <input
+            type="number"
+            min="1900"
+            max="2099"
+            step="1"
+            value="2022"
+            input
+          />
+          <label for="cvc">CVC</label>
+          <input type="number" name="" id="" id="cvc" />
+        </div>
+        <button>Confirm</button>
+      </form>
+    </div>
+
+    <!-- 
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+   -->
+
+    <!-- Completed state start -->
+
+    <!--  Thank you! We've added your card details Continue  -->
+  </body>
+</html>
