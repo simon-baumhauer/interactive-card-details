@@ -21,8 +21,6 @@ body > div {
 /* card-front */
 
 .card-front-wrap {
-  margin-top: 100px;
-  margin-left: 140px;
   position: relative;
 }
 
@@ -64,8 +62,6 @@ body > div {
 /* card-back */
 
 .card-back {
-  margin-top: 40px;
-  margin-left: 250px;
   position: relative;
 }
 
@@ -78,6 +74,7 @@ body > div {
   color: white;
   position: absolute;
   bottom: 113px;
+  left: 340px;
   font-size: 24px;
   font-weight: bold;
   z-index: 4;
